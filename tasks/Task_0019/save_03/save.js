@@ -1,0 +1,85 @@
+jQuery(document).ready(function(){
+	jQuery( "#save-text" ).mouseenter(function() {
+		jQuery( "#save-text" ).text( "Save" );
+	});
+	jQuery( "#save-stay" ).mouseenter(function() {
+		jQuery( "#save-text" ).text( "Save" );
+		jQuery( "#save-stay" ).removeClass( "black" );
+		jQuery( "#save-close" ).removeClass( "black" );
+		jQuery( "#save-new" ).removeClass( "black" );
+		jQuery( "#save-as-copy" ).removeClass( "black" );
+		jQuery( "#save-stay i" ).css({"opacity": "1"});
+		jQuery( "#save-close i" ).css({"opacity": "1"});
+		jQuery( "#save-new i" ).css({"opacity": "1"});
+		jQuery( "#save-as-copy i" ).css({"opacity": "1"});
+		jQuery( "#save-btn" ).css({"background": "#5cb85c"});
+		jQuery( "#save-stay" ).css({"background": "#5cb85c"});
+		jQuery( "#save-close" ).css({"background": "#2e872e"});
+		jQuery( "#save-new" ).css({"background": "#106410"});
+		jQuery( "#save-as-copy" ).css({"background": "#014701"});
+	});
+	jQuery( "#save-close" ).mouseenter(function() {
+		jQuery( "#save-text" ).text( "Save and Close" );
+		jQuery( "#save-stay" ).addClass( "black" );
+		jQuery( "#save-close" ).removeClass( "black" );
+		jQuery( "#save-new" ).removeClass( "black" );
+		jQuery( "#save-as-copy" ).removeClass( "black" );
+		jQuery( "#save-stay i" ).css({"opacity": "0.2"});
+		jQuery( "#save-close i" ).css({"opacity": "1"});
+		jQuery( "#save-new i" ).css({"opacity": "1"});
+		jQuery( "#save-as-copy i" ).css({"opacity": "1"});
+		jQuery( "#save-btn" ).css({"background": "#2e872e"});
+		jQuery( "#save-stay" ).css({"background": "transparent"});
+		jQuery( "#save-close" ).css({"background": "#2e872e"});
+		jQuery( "#save-new" ).css({"background": "#106410"});
+		jQuery( "#save-as-copy" ).css({"background": "#014701"});
+	});
+	jQuery( "#save-new" ).mouseenter(function() {
+		jQuery( "#save-text" ).text( "Save and New" );
+		jQuery( "#save-stay" ).addClass( "black" );
+		jQuery( "#save-close" ).addClass( "black" );
+		jQuery( "#save-new" ).removeClass( "black" );
+		jQuery( "#save-as-copy" ).removeClass( "black" );
+		jQuery( "#save-stay i" ).css({"opacity": "0.2"});
+		jQuery( "#save-close i" ).css({"opacity": "0.2"});
+		jQuery( "#save-new i" ).css({"opacity": "1"});
+		jQuery( "#save-as-copy i" ).css({"opacity": "1"});
+		jQuery( "#save-btn" ).css({"background": "#106410"});
+		jQuery( "#save-stay" ).css({"background": "transparent"});
+		jQuery( "#save-close" ).css({"background": "transparent"});
+		jQuery( "#save-new" ).css({"background": "#106410"});
+		jQuery( "#save-as-copy" ).css({"background": "#014701"});
+	});
+	jQuery( "#save-as-copy" ).mouseenter(function() {
+		jQuery( "#save-text" ).text( "Save as a Copy" );
+		jQuery( "#save-stay" ).addClass( "black" );
+		jQuery( "#save-close" ).addClass( "black" );
+		jQuery( "#save-new" ).addClass( "black" );
+		jQuery( "#save-as-copy" ).removeClass( "black" );
+		jQuery( "#save-stay i" ).css({"opacity": "0.2"});
+		jQuery( "#save-close i" ).css({"opacity": "0.2"});
+		jQuery( "#save-new i" ).css({"opacity": "0.2"});
+		jQuery( "#save-as-copy i" ).css({"opacity": "1"});
+		jQuery( "#save-btn" ).css({"background": "#014701"});
+		jQuery( "#save-stay" ).css({"background": "transparent"});
+		jQuery( "#save-close" ).css({"background": "transparent"});
+		jQuery( "#save-new" ).css({"background": "transparent"});
+		jQuery( "#save-as-copy" ).css({"background": "#014701"});
+	});
+	jQuery( "#save-btn" ).mouseleave(function() {
+		jQuery( "#save-text" ).text( "Save" );
+		jQuery( "#save-stay" ).removeClass( "black" );
+		jQuery( "#save-close" ).removeClass( "black" );
+		jQuery( "#save-new" ).removeClass( "black" );
+		jQuery( "#save-as-copy" ).removeClass( "black" );
+		jQuery( "#save-stay i" ).css({"opacity": "1"});
+		jQuery( "#save-close i" ).css({"opacity": "1"});
+		jQuery( "#save-new i" ).css({"opacity": "1"});
+		jQuery( "#save-as-copy i" ).css({"opacity": "1"});
+		jQuery( "#save-btn" ).css({"background": "#5cb85c"});
+		jQuery( "#save-stay" ).css({"background": "#5cb85c"});
+		jQuery( "#save-close" ).css({"background": "#2e872e"});
+		jQuery( "#save-new" ).css({"background": "#106410"});
+		jQuery( "#save-as-copy" ).css({"background": "#014701"});
+	});
+});
